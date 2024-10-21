@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto - Mi Empresa</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulario de presupuesto -->
+    <main>
+        <h2>Solicitar Presupuesto</h2>
+        <form action="#" method="post" id="formulario-presupuesto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="informacion">Solicite más información:</label>
+            <textarea id="informacion" name="informacion" rows="4" required></textarea>
+
+            <label>
+                <input type="checkbox" name="politica" required>
+                Acepto la Política de Privacidad
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        
+        <div class="footer-container">
+            <div class="logo-footer">
+                <img src="../images/logo.png" alt="Logo de la Empresa" class="logo">
+                <div class="redes-sociales">
+                    <a href="#"><img src="../images/social_icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../images/social_icons/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="../images/social_icons/instagram.png" alt="Instagram"></a>
+                </div>
+                <div class="direccion">
+                    <p>Dirección: Calle ciutat vella,Valencia,España</p>
+                </div>
+                <div class="aviso-legal">
+                    <p>&copy; 2024 Mi Empresa - Aviso Legal</p>
+                </div>
+            </div>        
+        </div>    
+    </footer>
+</body>
+</html>

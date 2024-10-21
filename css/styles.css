@@ -1,0 +1,292 @@
+/* styles.css */
+
+/* Paleta de colores */
+:root {
+    --color-primario: #1a237e;
+    --color-complementario: #ffc107;
+    --color-neutro: #f5f5f5;
+    --color-texto: #333;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos del menú de navegación */
+nav {
+    background-color: var(--color-neutro); /* Fondo del menú */
+    padding: 10px 20px; /* Espaciado interno */
+    
+}
+
+nav ul {
+    list-style: none; /* Eliminar el estilo de lista */
+    padding: 0; /* Eliminar padding */
+    display: flex; /* Usar flexbox para alinear en fila */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente al centro */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado horizontal entre elementos */
+}
+
+nav ul li a {
+    color: #1b1bcc; /* Color normal de los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    padding: 10px; /* Espaciado interno para los enlaces */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+/* Estilo para el enlace activo */
+nav ul li a.active {
+    color: white; /* Color de texto cuando está activo */
+    background-color: var(--color-primario); /* Color de fondo para el enlace activo */
+    border-radius: 4px; /* Bordes redondeados opcionales */
+}
+
+/* Efecto hover para los enlaces */
+nav ul li a:hover {
+    background-color: var(--color-complementario); /* Cambia el fondo al pasar el ratón */
+    color: white; /* Cambia el color del texto al pasar el ratón */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-neutro);
+    color: var(--color-texto);
+    display: flex; /* Usar flexbox para organizar el contenido */
+    flex-direction: column; /* Colocar los elementos en una columna */
+    min-height: 100vh;
+}
+
+/* Estilos del footer */
+footer {  
+    background-color: var(--color-primario); /* Color de fondo del footer */
+    color: rgb(27, 2, 2); /* Color del texto en el footer */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto en el footer */
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.logo {
+    max-width: 150px; /* Tamaño máximo del logotipo */
+    height: auto; /* Mantiene la proporción */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+/* Estilos para el formulario de presupuesto */
+#formulario-presupuesto {
+    display: flex; /* Cambiar a flexbox para mayor control */
+    flex-direction: column; /* Mostrar los elementos en columna */
+    max-width: 400px; /* */
+    margin: 0 auto; /* Centrar el formulario en la página */
+}
+
+#formulario-presupuesto label {
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo */
+}
+
+#formulario-presupuesto input,
+#formulario-presupuesto textarea,
+#formulario-presupuesto button {
+    margin-bottom: 15px; /* Espacio entre los campos */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    width: 100%; /* */
+    box-sizing: border-box; /*  */
+}
+
+#formulario-presupuesto button {
+    background-color: var(--color-primario); /* Fondo del botón */
+    color: #fff; /* Color del texto */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+#formulario-presupuesto button:hover {
+    background-color: var(--color-complementario); /* Cambio de color al pasar por encima */
+}
+
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Tipografía general */
+    background-color: #f5f5f5; /* Color de fondo */
+    color: black; /* Color del texto en negro */
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+}
+
+/* Ocultar todas las secciones de contenido por defecto */
+.contenido {
+    display: none; /* Ocultar secciones de contenido */
+}
+
+/* Mostrar la sección correspondiente cuando se hace clic en su enlace */
+#importancia:target, #consejos:target, #avances:target {
+    display: block; /* Mostrar la sección correspondiente */
+}
+
+
+/* Estilos para el header */
+header {
+    background-color: #f5f5f5; /* Color de fondo del header */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+}
+
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Tipografía general */
+    background-color: #f5f5f5; /* Color de fondo */
+    color: black; /* Color del texto en negro */
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    flex-direction: column; /* Colocar el contenido en una columna */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+/* Ocultar todas las secciones de contenido por defecto */
+.contenido {
+    display: none; /* Ocultar secciones de contenido */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Mostrar la sección correspondiente cuando se hace clic en su enlace */
+#importancia:target, #consejos:target, #avances:target {
+    display: block; /* Mostrar la sección correspondiente */
+    margin: 20px; /* Añadir margen alrededor de la sección */
+}
+
+h2 {
+    margin-bottom: 10px; /* Espaciado inferior del título */
+}
+
+p {
+    margin-bottom: 20px; /* Espaciado inferior de los párrafos */
+} 
+
+
+/* Estilos para el header */
+header {
+    background-color: #f5f5f5; /* Color de fondo del header */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+}
+
+
+
+/* Estilos adicionales para las secciones */
+h2 {
+    margin-bottom: 10px; /* Espaciado inferior del título */
+}
+
+p {
+    margin-bottom: 20px; /* Espaciado inferior de los párrafos */
+}
+
+/* Añade esto a tu archivo styles.css */
+/* Estilo para la galería */
+/* Estilo para la galería */
+.galeria {
+    display: grid; /* Utiliza grid para crear la rejilla */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas fijas */
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 20px; /* Padding alrededor de la galería */
+    margin-bottom: 20px; /* Margen inferior para separar del footer */
+}
+
+/* Estilo para los elementos de la galería */
+.galeria-item {
+    text-align: center;
+    position: relative; /* Centra el texto */
+}
+
+/* Asegúrate de que las imágenes sean responsivas y del mismo tamaño */
+.galeria-img {
+    width: 100%; /* Las imágenes ocupan el 100% del contenedor */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantiene la proporción y cubre el área del contenedor */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    transition: transform 0.3s; /* Transición para efectos de hover */
+}
+
+.galeria-img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+.overlay {
+    position: absolute; /* Posición absoluta para superponerse a la imagen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none; /* Oculto por defecto */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+    border-radius: 8px; /* Bordes redondeados para el overlay */
+}
+/* Mostrar el overlay al hacer hover sobre el galeria-item */
+.galeria-item:hover .overlay {
+    display: flex; /* Mostrar el overlay */
+}
+
+.galeria-img-ampliada {
+    max-width: 80%; /* Ancho máximo de la imagen ampliada */
+    max-height: 80%; /* Alto máximo de la imagen ampliada */
+    border-radius: 8px; /* Bordes redondeados para la imagen ampliada */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: var(--color-primario); /* Color de fondo del footer */
+    color: hsl(0, 0%, 100%); /* Color del texto en el footer */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto en el footer */
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+.footer-container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilos del logo en el footer */
+.logo-footer .logo {
+    width: 60px; /* Tamaño del logotipo */
+    height: auto; /* Mantener proporción */
+}
+
+.redes-sociales img {
+    width: 20px; /* Tamaño de los íconos sociales */
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
